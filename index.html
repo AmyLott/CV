@@ -1,70 +1,128 @@
 <!DOCTYPE html>
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Amy's Personal Site</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amy Lott | Computer Science Educator & Developer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <table cellspacing="20">
-        <tr>
-            <td><img src="Amy-Profile.png" alt="Amy Lott" height="200px"> </td>
-            <td>
-                <h1>Amy Lott</h1>
-                <p><em>Web Developer</em></p>
-                <p>I am new <a href="https://github.com/AmyLott?tab=repositories">web developer</a> that is badass at
-                    this new life.</p>
-            </td>
-        </tr>
-    </table>
-    <hr>
-    <h3>Work Experience</h3>
-    <table cellspacing="10">
-        <tr>
-            <td>2005-2017</td>
-            <td>Restaurant and Retail Management</td>
-        </tr>
-        <tr>
-            <td>2017-2020</td>
-            <td>Office Administrator and Phone Operator</td>
-        </tr>
-        <tr>
-            <td>2020-Present</td>
-            <td>Horse Trainer and Web Designer</td>
-        </tr>
-    </table>
-    <h3>Skills</h3>
-    <table cellspacing="10">
-        <tr>
-        <tr>
-            <td>Front-end</td>
-            <td>⭐⭐⭐⭐⭐</td>
-            <td>Backend</td>
-            <td>⭐⭐⭐⭐</td>
-        </tr>
-        <tr>
-            <td>Inter-personal</td>
-            <td>⭐⭐⭐⭐</td>
-            <td>Version Control</td>
-            <td>⭐⭐⭐</td>
-        </tr>
-        </tr>
-    </table>
-    <hr>
-    <h4>Books</h4>
-    <ul>
-        <li>The Discovery of Witches Trilogy</li>
-        <li>All The Light We Cannot See</li>
-        <li>50 Shades of Grey</li>
-    </ul>
-    <h4>Hobbies</h4>
-    <ol>
-        <li>Horseback Riding</li>
-        <li>Gardening</li>
-        <li>Exercising</li>
-    </ol>
-    <hr>
-    <a href="contact.html"><strong>Contact Me</strong></a>
-</body>
 
+  <nav class="navbar">
+    <div class="container nav-content">
+      <a href="#" class="logo">Amy Lott</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container">
+      <p class="eyebrow">Computer Science Educator &amp; B.S. CS Candidate</p>
+      <h1>Bridging classroom innovation with practical software engineering.</h1>
+      <p class="subtitle">High school Computer Science teacher focused on hands-on physical computing, interdisciplinary STEM, and accessible software development.</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn primary">View Projects</a>
+        <a href="#contact" class="btn secondary">Get in Touch</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>
+        I am a high school Computer Science educator currently completing my Bachelor of Science in Computer Science at Western Governors University. My work centers on making computer science tangible—combining Java programming, Python-driven embedded hardware, and real-world data logging to prepare students for technical careers.
+      </p>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Featured Projects</h2>
+      <div class="grid">
+        
+        <article class="card">
+          <div class="card-header">
+            <h3>Arduino Sensor &amp; Database Lab</h3>
+            <span class="tag">Python • Arduino Uno R4</span>
+          </div>
+          <p>An interdisciplinary STEM curriculum module where students collect environmental data using physical sensors programmed in Python and log results to a structured database.</p>
+          <div class="card-links">
+            <a href="https://github.com/AmyLott" target="_blank" rel="noopener">View Repository &rarr;</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-header">
+            <h3>Project Placeholder Two</h3>
+            <span class="tag">Java • Algorithms</span>
+          </div>
+          <p>Highlight a WGU capstone project, a Java application, or a custom teaching tool you built to automate classroom workflows.</p>
+          <div class="card-links">
+            <a href="https://github.com/AmyLott" target="_blank" rel="noopener">View Repository &rarr;</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>Technical Skills &amp; Education</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Languages &amp; Tools</h3>
+          <ul class="skill-list">
+            <li><strong>Languages:</strong> Java, Python, HTML5, CSS3, SQL</li>
+            <li><strong>Hardware &amp; OS:</strong> Arduino Uno R4, Linux (LPI Linux Essentials Certified)</li>
+            <li><strong>Tools:</strong> Git, GitHub, VS Code</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Education &amp; Credentials</h3>
+          <ul class="skill-list">
+            <li><strong>B.S. in Computer Science</strong> — Western Governors University (In Progress)</li>
+            <li><strong>High School Computer Science Educator</strong></li>
+            <li><strong>LPI Linux Essentials</strong> Certification</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Interested in collaborating on CS curriculum, software projects, or educational technology? Reach out below.</p>
+      
+      <!-- Replace YOUR_FORM_ID with a free endpoint from Formspree.io, or use direct links -->
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn primary">Send Message</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Amy Lott. Hosted on GitHub Pages.</p>
+    </div>
+  </footer>
+
+</body>
 </html>
